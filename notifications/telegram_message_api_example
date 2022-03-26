@@ -1,0 +1,11 @@
+BOT_TOKEN 5260568224:AAFtn3R-6iCUR-GEwN5A2BqCu3IpXkC_a_o
+CHAT_ID -1001722068999
+
+//Command in many lines (\ as separator)
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001722068999", "text": "This is a test from lela", "disable_notification": true}' \
+     https://api.telegram.org/bot5260568224:AAFtn3R-6iCUR-GEwN5A2BqCu3IpXkC_a_o/sendMessage
+
+ //Command in one line (\ as separator)
+ curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001722068999", "text": "This is a test from lela", "disable_notification": true}' https://api.telegram.org/bot5260568224:AAFtn3R-6iCUR-GEwN5A2BqCu3IpXkC_a_o/sendMessage
